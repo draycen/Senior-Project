@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Away</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a3b47b64d7.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body id="room_page">
+        <header>
+            <nav class ="navbar">
+                <div>
+                    <a href="index.html"> 
+                        <img class="logo_icon" src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="navlinks" id="navi-list" >
+                        <li class="link_items"><a href="index.html">Home</a></li>
+                        <li class="link_items"><a href="about.html">About</a></li>
+                        <li class="link_items"><a href="rooms.html">Rooms</a></li>
+                        <li class="link_items"><a href="contact.html">Contact</a><li>
+                        
+                </ul>
+                <div class="menu" id="toggle_button">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                </div>
+            </nav>
+        </header>
+    
+        <script>
+            const toggleButton = document.getElementById('toggle_button');
+            const naviList = document.getElementById("navi-list")
+            toggleButton.addEventListener('click', () => {
+                naviList.classList.toggle('active');
+            })
+        </script>
+
+        <section class="container">
+            <div class="room">
+                <div class="room-img queen"></div>
+                <h2>Queen Room</h2>
+                <p>Queen room (16m² or 172ft²) 600,000vnd / per night for maximum 3 adults and 1 children. Providing free toiletries, this double room includes a private bathroom with a shower, a bidet and a hairdryer. The double room provides air conditioning, a mini-bar, a mini fridge, a wardrobe, an electric kettle, as well as a TV with streaming services. The unit offers 1 bed.
+                </p>
+                <a href="">READ MORE</a>
+            </div>
+
+            <div class="room">
+                <div class="room-img queen_win"></div>
+                <h2>Queen Room with Window</h2>
+                <p>Queen room (16m² or 172ft²) with window 690,000vnd/night for maximum 3 adults and 1 children. Featuring with free toiletries, this double room includes a private bathroom with a shower, a bidet and a hairdryer. The air-conditioned double room features a smart TV, a mini-bar, a wardrobe, a mini fridge, and an electric kettle as well as city views. This unit has 1 bed. </p>
+                <a href="">READ MORE</a>
+            </div>
+
+            <div class="room">
+                <div class="room-img triple"></div>
+                <h2>Triple Bedroom with Balcony</h2>
+
+                <p>Triple Bed Room with Balcony (30m²) 750,000vnd/night for maximum 5 adults and 2 children: The spacious double room features air conditioning, a mini-bar, a wardrobe, a mini fridge, a smart TV with Netflix, a balcony with 2 chairs and a table facing the beautiful city street views as well as a private bathroom boasting a shower. The unit has 1 double-bed and 1 single bed. 
+                </p>
+                <a href="">READ MORE</a>
+            </div>
+
+            <div class="room">
+                <div class="room-img studio"></div>
+                <h2>Studio Apartment</h2>
+                <p>Studio with Balcony (30m² / 344ft²) 900,000vnd/night for maximum 5 adults and 2 children, containing a living room, 1 bathroom with a shower and free toiletries. In the kitchen, there is a refrigerator, kitchenware, a microwave and an electric kettle. The air-conditioned apartment provides a smart TV, a mini-bar, a seating area, a dining area as well as city views. The unit offers 1 double-bed.</p>
+                <a href="">READ MORE</a>
+            </div>
+
+            <div class="room">
+                <div class="room-img studio_win"></div>
+                <h2>Studio Apartment with Window</h2>
+                <p>Studio with Window and Balcony (30m² / 344ft²) 1,000,000vnd/night for maximum 5 adults and 2 children, containing a living room, 1 bathroom with a shower and free toiletries. In the kitchen, there is a refrigerator, kitchenware, a microwave and an electric kettle. The air-conditioned apartment provides a smart TV, a mini-bar, a seating area, a dining area as well as city views. The unit offers 1 double-bed.
+                </p>
+                <a href="">READ MORE</a>
+            </div>
+        </section>
+
+    </body>
+    
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="img/logo.png" class="logo_iconf" alt="">
+
+                <div class="icon">
+                <a href="https://www.facebook.com/homeaway38" target="_blank" class="fa-brands fa-facebook fa-beat-fade"></a>
+                <a href="https://www.instagram.com/homeaway38/" target="_blank" class="fa-brands fa-instagram fa-beat-fade"></a>
+                <a href="https://www.airbnb.com/rooms/46535059?guests=1&adults=1&s=67&unique_share_id=614aec3f-2808-42f9-8e99-4a7b4472d327" target="_blank" class="fa-brands fa-airbnb fa-beat-fade"></a>   </div>
+            </div>
+
+            <div class="box">
+                <div class="footer_content"> 
+                    <h2>Contact Us</h2>
+                    <p>Please do not hesitate to ask us any question!</p>
+                    <i class="fa fa-location-dot"></i>
+                    <label>38 Do Quang Dau Street, Pham Ngu Lao Ward, Ho Chi Minh City, Vietnam. </label> <br>
+                    <i class="fa fa-phone"></i>
+                    <label>[+84] 975 380 238</label> <br>
+                    <i class="fa fa-envelope"></i>
+                    <label>homeaway38@gmail.com</label><br>
+                </div>
+            </div>
+            </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright © 2023 Home Away Homestay, All Rights Reserved.</p>
+    </div>
+</html>

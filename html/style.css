@@ -1,0 +1,604 @@
+/*
+                    <i class="fa-solid fa-bars"></i>
+<li class="link_items"><i class="fa fa-search" aria-hidden="true"></i></li>               
+<li class="link_items"> <button class="primary-btn">Check Availability</button></li>
+ */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f5ece0;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+/*v--------icons---------v*/
+.navbar {
+    background-color: #d2c5b4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo_icon {
+    height: 100px;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks .link_items {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: 	#808080;
+}
+
+.menu {
+    display: none;
+}
+
+.menu_line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px ;
+}
+/*^--------icons---------^*/
+/*v--------container---------v*/
+#showcase {
+    background: url(./img/street.jpg) no-repeat center center/cover;
+    height: 650px;
+    width: 100%;
+
+}
+
+#showcase .showcase-content{
+    color: white;
+    text-align: center;
+    padding-top: 110px;
+    
+}
+
+#showcase .showcase-content h1{
+    font-size: 100px;
+    line-height: 2em;
+    font-weight: bold;
+    text-shadow: 5px 3px 4px #000000;
+}
+
+#showcase .showcase-content p{
+    padding-bottom: 25px;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: rgb(251, 228, 199);
+}
+.intro {
+    font-size: 45px;
+    text-shadow: 5px 3px 4px #000000;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(19, 17, 17);
+    padding: 14px 21px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #d2c5b4;
+    color: black;
+}
+/*^--------container---------^*/
+
+/*v--------book---------v*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.book .grid :hover{
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.book {
+    padding: 40px 0px;
+    background: rgba(1, 1, 37, 0.826);
+    color: #fff;
+}
+
+.book-container h1 {
+    font-family: serif;
+    font-size: 28px;
+}
+
+.book h1 span {
+    color: #7fc142;
+}
+
+.book input {
+    padding: 20px;
+}
+
+.book input:nth-last-child(1) {
+    background: #7fc142;
+    color: #fff;
+}
+/*^--------book---------^*/
+
+/*v--------about---------v
+
+.about_container{
+    display: inline-flex;
+    margin-top: 20px;
+    height: 650px;
+    width: 100%;
+}
+*/
+
+
+.about_container {
+    padding-top: 10rem;
+    display: inline-flex;
+    gap: 5rem;
+}
+
+.about_content {
+    text-align: center;
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.about_content h2 {
+    margin-bottom: 10rem;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+.about_content p {
+    margin-bottom: 15rem;
+    font-size: 1.9rem;
+}
+
+.aboutimg {
+    margin: auto;
+}
+/*^--------about---------^*/
+
+/*v--------Footer---------v*/
+footer {
+    background: #d2c5b4;
+    color: #555;
+    width: 100%;
+    padding: 3% 10% 4% 10%;
+}
+
+footer .logo_iconf {
+    height: 200px;
+    padding-left: 5px;
+}
+
+footer .grid {
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+footer .footer_content {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    line-height: 20px;
+}
+
+footer p {
+    color: #555;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+footer .icon a {
+    margin: 30px 20px 20px 20px;
+    font-size: 30px;
+}
+
+footer h2 {
+    color: #555;
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+
+    }
+
+footer a {
+    margin: 20px 0;
+    margin-right: 20px;
+    }
+
+.fa-facebook {
+    color: blue;
+    border: none;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    text-decoration: none;
+    border: none;
+    color: #fff0;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-airbnb {
+    color: red;
+    text-decoration: none;
+    border: none;
+}
+
+footer label {
+    margin: 45px 0px;
+}  
+
+.legal {
+    padding: 10px 0;
+    text-align:center;
+    background: #282834;
+    color: #b6b7b9;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*^--------Footer---------^*/
+/*v--------About page---------v*/
+#about {
+    display: flex;
+    margin: 20px auto;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.heading {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.aboutpage_container {
+    max-width: 80%;
+    margin: auto;
+}
+
+#aboutpage_room .content{
+    flex-wrap: wrap;
+
+}
+#aboutpage_room .button{
+    display: flex;
+    justify-content: end;
+}
+
+
+#aboutpage_room .grid {
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+
+}
+
+#aboutpage_room img {
+    width: 100%;
+    height: 100%;
+}
+
+#aboutpage_room .box {
+    box-shadow: 0 13px 43px 0 rgb(37 46 89/10%);
+    
+}
+
+#aboutpage_room .box:hover{
+transform: scale(1.05);
+    transition: 1s 
+}
+#aboutpage_room .text {
+    padding: 20px;
+}
+
+#aboutpage_room h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#aboutpage_room p span {
+    font-size: 14px;
+    color: grey;
+}
+
+#aboutpage_room p {
+    font-size: 20px;
+}
+
+#about_ament .aments h2{
+    text-align: center;    
+
+}
+#about_ament .aments{
+    display: grid;
+    padding-top: 50px;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+/*^--------About page---------^*/
+/*^--------
+#about .about_pic {
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+#about .content {
+    padding: 35px;
+    font-size: 20px;
+}
+---------^*/
+
+/*v--------Room Page---------v*/
+
+#room_page .grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 710px;
+    grid-template-columns: 3fr 1fr;
+    align-items: start;
+}
+
+
+#room_page .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+#room_page .room {
+    background: white;
+    width: 360px;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+
+#room_page .room-img{
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius:15px 15px 0 0;;
+}
+
+#room_page .room p {
+    padding: 10px;
+    text-align:center;
+
+}
+
+#room_page .room h2 {
+    text-align: center;
+}
+
+#room_page .room a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 15px 50px 15px;
+    align-self: flex-start;
+
+
+}
+
+#room_page .room:hover{
+    transform: scale(1.05);
+    transition: 1s 
+}
+
+#room_page .queen {
+    background-image: url('./img/queen/queen1.JPG');
+}
+
+#room_page .queen_win {
+    background-image: url('./img/queen_window/queenwin1.JPG');
+}
+
+#room_page .triple {
+    background-image: url('./img/triple/triplebed5.JPG');
+}
+
+#room_page .studio {
+    background-image: url('./img/studio/studio1.JPG');
+}
+
+#room_page .studio_win {
+    background-image: url('./img/studio_window/studiowin1.JPG');
+}
+/*^--------Room Page---------^*/
+/*v--------Contact Page---------v*/
+#contact-page {
+    text-align: center;
+}
+#contact-page .form-group{
+    margin-bottom: 40px;
+    padding: 20px;
+    
+}
+
+#contact-page h1 {
+    font-size: 5vw;
+    padding-bottom: 1rem;
+}
+
+#contact-page p {
+    padding-top: 10px;
+}
+#contact-page label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-page input, #contact-page textarea {
+    width: 30%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-page textarea{
+    height: 200px;
+}
+
+#contact-page input:focus,
+#contact-page textarea:focus {
+    outline: none;
+    border-color: red;
+}
+
+#contact-page .map {
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+itfram {
+    width: 100%;
+    height: 500px;
+}
+/*^--------Contact Page---------^*/
+
+@media all and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar .logo_icon{
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    
+    .navlinks {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .navlinks .link_items {
+        display: block;
+        border-top: 1px solid white;
+    }
+
+    .logo_icon {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+    /*-- */
+    .book-container h1 {
+        font-family: serif;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /*-- */
+
+    .about_container {
+        padding-top: 10rem;
+        display: inline-flex;
+        gap: 5rem;
+    }
+    
+    .about_content {
+        text-align: center;
+        width: 50%;
+        font-size: 1.5rem;
+    }
+    
+    .about_content h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 3.5rem;
+    }
+
+    .about_content p {
+        margin-bottom: 2rem;
+    }
+
+    /*-- Contact*/
+    #contact-page {
+        margin: 40px 0;
+        height: 100%;
+    }
+    #contact-page .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact-page .container h1 {
+        flex-wrap: wrap;
+        font-size: 15vw;
+    }
+    #contact-page input, #contact-page textarea {
+        width: 80%;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Away</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a3b47b64d7.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class ="navbar">
+                <div>
+                    <a href="index.html"> 
+                        <img class="logo_icon" src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="navlinks" id="navi-list" >
+                        <li class="link_items"><a href="index.html">Home</a></li>
+                        <li class="link_items"><a href="about.html">About</a></li>
+                        <li class="link_items"><a href="rooms.html">Rooms</a></li>
+                        <li class="link_items"><a href="contact.html">Contact</a><li>
+                        
+                </ul>
+                <div class="menu" id="toggle_button">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                </div>
+            </nav>
+
+            <div id="showcase">
+                <div class="content">
+                    <div class="showcase-content">
+                        <h1><span> Home Away Homestay</span></h1>
+                        <p class="intro"> A Relexation Station for Happy Sleep</p>
+                        <a class="btn" href="about.html"> About Our Homestay </a>
+                    </div>
+                </div> 
+            </div>
+        </header>
+    
+    <script>
+        const toggleButton = document.getElementById('toggle_button');
+        const naviList = document.getElementById("navi-list")
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+        })
+    </script>
+    
+    <section class="book">
+        <div class="book-container">
+            <h1> <span>Book </span> Your Rooms </h1>
+
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Arival Date">
+                    <input type="date" placeholder="Departure Date">
+                    <input type="number" placeholder="Adults">
+                    <input type="number" placeholder="Childern">
+                    <input type="submit" value="CHECK AVAILABILITY">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about_container">
+            <div class="about_content">
+                <h2>Home Away Homestay</h2>
+                <p>We are located right at the center in Sai Gon, where we are close to many street foods, and especially next to Bui Vien walking street (less than 1 minute walking). We are a simple Homestay that provides comfortable rooms, with our enthusiastic staffs who will support to make sure your stay is pleasant. </p>
+                <a class="btn" href="about.html">ABOUT US</a>
+            </div>
+
+            <div class="aboutimg">
+                <img src="img/front.jpg" width = "500" height = "800" alt="aboutpic">
+            </div>
+
+        </div>
+    </section>
+
+    </body>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="img/logo.png" class="logo_iconf" alt="">
+
+                <div class="icon">
+                <a href="https://www.facebook.com/homeaway38" target="_blank" class="fa-brands fa-facebook fa-beat-fade"></a>
+                <a href="https://www.instagram.com/homeaway38/" target="_blank" class="fa-brands fa-instagram fa-beat-fade"></a>
+                <a href="https://www.airbnb.com/rooms/46535059?guests=1&adults=1&s=67&unique_share_id=614aec3f-2808-42f9-8e99-4a7b4472d327" target="_blank" class="fa-brands fa-airbnb fa-beat-fade"></a>   </div>
+            </div>
+
+            <div class="box">
+                <div class="footer_content"> 
+                    <h2>Contact Us</h2>
+                    <p>Please do not hesitate to ask us any question!</p>
+                    <i class="fa fa-location-dot"></i>
+                    <label>38 Do Quang Dau Street, Pham Ngu Lao Ward, Ho Chi Minh City, Vietnam. </label> <br>
+                    <i class="fa fa-phone"></i>
+                    <label>[+84] 975 380 238</label> <br>
+                    <i class="fa fa-envelope"></i>
+                    <label>homeaway38@gmail.com</label><br>
+                </div>
+            </div>
+            </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright © 2023 Home Away Homestay, All Rights Reserved.</p>
+    </div>
+    
+</html>

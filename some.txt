@@ -1,0 +1,146 @@
+
+Is this OK? (yes)
+PS D:\SENIOR> npm i express --save
+
+added 62 packages, and audited 63 packages in 4s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\SENIOR> npm i mongoose
+
+added 25 packages, and audited 88 packages in 4s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\SENIOR> npm i body-parser
+
+added 2 packages, changed 2 packages, and audited 90 packages in 779ms
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\SENIOR> npm i nodemon
+
+added 33 packages, and audited 123 packages in 2s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\SENIOR> nodemon app.js
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try  
+again.
+At line:1 char:1
++ nodemon app.js
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (nodemon:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\SENIOR>      
+PS D:\SENIOR> nodemon app
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try  
+again.
+At line:1 char:1
++ nodemon app
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (nodemon:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\SENIOR> node app.js
+PS D:\SENIOR> nodemon server.js
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try  
+again.
+At line:1 char:1
++ nodemon server.js
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (nodemon:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\SENIOR> node server.js
+server is running on 3000
+PS D:\SENIOR> nodemon server.js
+ *  History restored 
+
+PS C:\Users\drayc> cd D:
+PS D:\> cd SENIOR           
+PS D:\SENIOR> nodemon server.js
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ nodemon server.js
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (nodemon:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\SENIOR> npm i nodemon --save
+
+up to date, audited 123 packages in 670ms
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\SENIOR> nodemon server.js
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ nodemon server.js
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (nodemon:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\SENIOR> npm install -g nodemon
+
+added 33 packages in 718ms
+
+3 packages are looking for funding
+  run `npm fund` for details
+PS D:\SENIOR> nodemon server.js
+[nodemon] 3.0.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+server is running on 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+server is running on 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+server is running on 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+server is running on 3000
+PS D:\SENIOR> nodemon server.js
+[nodemon] 3.0.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+server is running on 3000
+PS D:\SENIOR> npm i cors
+
+added 2 packages, and audited 125 packages in 1s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\SENIOR> npm i cors -g --save
+
+added 3 packages in 523ms

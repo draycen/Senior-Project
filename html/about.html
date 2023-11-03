@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Away</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a3b47b64d7.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class ="navbar">
+                <div>
+                    <a href="index.html"> 
+                        <img class="logo_icon" src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="navlinks" id="navi-list" >
+                        <li class="link_items"><a href="index.html">Home</a></li>
+                        <li class="link_items"><a href="about.html">About</a></li>
+                        <li class="link_items"><a href="rooms.html">Rooms</a></li>
+                        <li class="link_items"><a href="contact.html">Contact</a><li>
+                        
+                </ul>
+                <div class="menu" id="toggle_button">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                </div>
+            </nav>
+
+        </header>
+    
+    <script>
+        const toggleButton = document.getElementById('toggle_button');
+        const naviList = document.getElementById("navi-list")
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+        })
+    </script>
+
+    <section id="about">
+        <div class="heading"> <h1>About Us</h1> </div>
+
+        <div class="about_pic"> <img src="img/front.jpg" width="250" height="500"> </div>
+        <div class="content">
+            <p> Located in Ho Chi Minh City, a 14-minute walk from Fine Arts Museum and 0.6 miles from the center, Home Away Homestay, City Center, D1 has air-conditioned accommodations with free Wifi, and free bikes.
+
+                All self-catered units feature parquet floors and are fitted with a TV, an equipped kitchen with a fridge, and a private bathroom with bidet. Some units feature a seating area and/or a balcony.
+                
+                The homestay has a terrace.
+                
+                Popular points of interest near Home Away Homestay, City Center, D1 include Takashimaya Vietnam, Ben Thanh Street Food Market and Tao Dan Park. The nearest airport is Tan Son Nhat International, 5 miles from the accommodation, and the property offers a paid airport shuttle service. </p>
+        </div>
+    </section>
+
+    <section id="about_ament">
+        <div class="aments">
+            <h2>Amenities</h2>
+            <div class="content">
+                <div class="box flex">
+                <i class="fa-solid fa-square-parking"></i>
+                <span>Free Parking</span>
+                </div>
+                <div class="box flex">
+                <i class="fa-solid fa-kitchen-set"></i>
+                <span>Kitchen</span>
+                </div>
+                <div class="box flex">
+                <i class="fa-solid fa-wifi"></i>
+                <span>Fast Wifi</span>
+                </div>
+                <div class="box flex">
+                <i class='far fa-snowflake'></i>
+                <span>Air Conditioning</span>
+                </div>
+                <div class="box flex">
+                <i class='fas fa-tshirt'></i>
+                <span>Washing And Drying</span>
+                </div> 
+                <div class="box flex">
+                <i class="fa fa-bath"></i>
+                <span>Bathroom</span>
+                <i class='far fa-check-square'></i>
+                <span>Toothbrush</span>
+                </div> 
+            </div>
+        </div>
+        </section>
+
+    <section id="aboutpage_room">
+        <div class="aboutpage_container">
+            <div class="heading_top flex1">
+                <div class="heading"><h2>Rooms</h2></div>
+                <div class="button">
+                <a class="btn" href="rooms.html">VIEW ALL</a>
+                </div>
+            </div>
+        
+            <div class="content grid">
+                <div class="box">
+                    <div class="img">
+                        <img src="img/queen_window/queenwin1.JPG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Queen Room with Window</h3>
+                        <p>690,000<span>vnd</span><span>/per night</span> </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="img/triple/triplebed2.JPG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Triple Bedroom with Balcony</h3>
+                        <p>750,000<span>vnd</span><span>/per night</span> </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="img/studio_window/studiowin1.JPG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Studio Apartment with Window</h3>
+                        <p>1,000,000<span>vnd</span><span>/per night</span> </p>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+    </body>
+    
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="img/logo.png" class="logo_iconf" alt="">
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/homeaway38" target="_blank" class="fa-brands fa-facebook fa-beat-fade"></a>
+                    <a href="https://www.instagram.com/homeaway38/" target="_blank" class="fa-brands fa-instagram fa-beat-fade"></a>
+                    <a href="https://www.airbnb.com/rooms/46535059?guests=1&adults=1&s=67&unique_share_id=614aec3f-2808-42f9-8e99-4a7b4472d327" target="_blank" class="fa-brands fa-airbnb fa-beat-fade"></a>   
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="footer_content"> 
+                    <h2>Contact Us</h2>
+                    <p>Please do not hesitate to ask us any question!</p>
+                    <i class="fa fa-location-dot"></i>
+                    <label>38 Do Quang Dau Street, Pham Ngu Lao Ward, Ho Chi Minh City, Vietnam. </label> <br>
+                    <i class="fa fa-phone"></i>
+                    <label>[+84] 975 380 238</label> <br>
+                    <i class="fa fa-envelope"></i>
+                    <label>homeaway38@gmail.com</label><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright © 2023 Home Away Homestay, All Rights Reserved.</p>
+    </div>
+</html>
