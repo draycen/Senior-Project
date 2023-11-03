@@ -23,11 +23,10 @@ const User = mongoose.model("User", contentSchema); //save info into this model
 
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/html/contact.html");
+    res.sendFile(__dirname, "/contact.html");
 })
-//app.get('/', (req, res) => {       
-//    res.sendFile('index.html', {root: __dirname});  
-//});
+
+
 
 app.post("/", function(req, res){
     let newUser = new User({
