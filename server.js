@@ -11,6 +11,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect("mongodb+srv://draycen188:keepitrealman@homestay.g82jlgb.mongodb.net/homestay") 
 
+app.use(express.static(__dirname + '/public'));
+
 // create a data schema
 
 const contentSchema = {
@@ -22,20 +24,22 @@ const contentSchema = {
 const User = mongoose.model("User", contentSchema); //save info into this model
 
 
-app.get("/", function(req, res) {
-    res.sendFile(__dirname, "/contact.html");
+app.get("/contact", function(req, res) {
+    res.sendFile(__dirname + "/public/contact.html");
 })
 
 
 
-app.post("/", function(req, res){
+
+
+app.post("/contact", function(req, res){
     let newUser = new User({
         name: req.body.name,
         email: req.body.email,
         message: req.body.message
     });
     newUser.save();
-    res.redirect('/');     
+    res.redirect('/contact');     
 })
 
 //jajaa

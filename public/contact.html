@@ -42,7 +42,7 @@
         <div class="container">
             <h1>Contact Us!</h1>
             <p>Please fill out the form below to contact us</p>
-            <form class="contactcontainer" id="myForm" method="post" action="http://localhost:3000">
+            <form class="contactcontainer" id="myForm" method="post" action="/contact">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="name">
@@ -58,47 +58,10 @@
                 <button type="submit" value="Submit" class="btn">Submit</button>
             </form>
         </div>
-        <script>
-            document.getElementById('myForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent the default form submission
-            
-                // Get form data
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-            
-                // Create a JSON object with the form data
-                const data = {
-                    name: "123",
-                    email: "123",
-                    message: "123"
-                };
-            
-                // Make a POST request to your API
-                fetch('http://localhost:3000', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                })
-                .then(response => {
-                    if (response.ok) {
-                        console.log('API request successful');
-                        // You can perform additional actions here
-                    } else {
-                        console.error('API request failed');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-            });
-            </script>
-            
+    
         <div class="map">
             <h1>Find Us Here!</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.97331403411874!2d106.69063032962072!3d10.767352895935375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ff77e9ee465%3A0x6a082e8cb08a731a!2sHome%20Away!5e0!3m2!1sen!2sus!4v1696620479613!5m2!1sen!2sus" width="1600" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.97331403411874!2d106.69063032962072!3d10.767352895935375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ff77e9ee465%3A0x6a082e8cb08a731a!2sHome%20Away!5e0!3m2!1sen!2sus!4v1696620479613!5m2!1sen!2sus" width="85%" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 </section>
 
@@ -134,3 +97,43 @@
         <p class="container">Copyright © 2023 Home Away Homestay, All Rights Reserved.</p>
     </div>
 </html>
+
+<!--
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Get form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+    
+        // Create a JSON object with the form data
+        const data = {
+            name: "123",
+            email: "123",
+            message: "123"
+        };
+    
+        // Make a POST request to your API
+        fetch('http://localhost:3000', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log('API request successful');
+                // You can perform additional actions here
+            } else {
+                console.error('API request failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }); 
+    </script>
+-->
