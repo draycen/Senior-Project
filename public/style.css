@@ -395,13 +395,19 @@ transform: scale(1.05);
     flex-wrap: wrap;
     padding-bottom: 10px;
 }
+#room_page .services {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
 
 #room_page .room {
     background: white;
     width: 360px;
     margin: 10px;
     border-radius: 15px;
-
 }
 
 #room_page .room-img{
@@ -412,7 +418,7 @@ transform: scale(1.05);
 }
 
 #room_page .room p {
-    padding: 10px;
+    padding: 9px;
     text-align:center;
 
 }
@@ -421,18 +427,116 @@ transform: scale(1.05);
     text-align: center;
 }
 
-#room_page .room a {
+#room_page .room .bttn {
     background-color: black;
     text-decoration: none;
     color: white;
     padding: 15px 20px;
     display: block;
     text-align: center;
-    margin: 15px 50px 15px;
+    margin: 10px 32%;
     align-self: flex-start;
-
-
+    cursor: pointer;
+    border: none;
 }
+
+#room_page .room .bttn:hover{
+    background: #d2c5b4;
+    color: black;
+    border: none;
+}
+
+
+#room_page .room .read-more-cont {
+    display: none;
+}
+
+#room_page .popup-box{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top:0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 500;
+	visibility: hidden;
+	opacity:0;
+	transition: all 0.5s ease-in-out;
+}
+#room_page .popup-box.open{
+    visibility: visible;
+	opacity:1;	
+}
+#room_page .popup-box .popup-content{
+	background-color: #ffffff;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	border-radius: 8px;
+}
+
+#room_page .popup-box .popup-header{
+	padding: 15px 40px 15px 15px;
+	border-bottom: 1px solid #dddddd;
+}
+#room_page .popup-box .popup-header h2{
+	margin:0;
+	color:#E91E63;
+	font-size: 20px;
+    font-weight: bold;
+}
+#room_page .popup-box .popup-header .popup-close-icon{
+	position: absolute;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #555555;
+    font-size: 28px;
+    line-height: 30px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+#room_page .popup-box .popup-body{
+	padding: 15px;
+	max-height: 600px;
+	overflow-y: auto;
+}
+#room_page .popup-box .popup-body img{
+	width: 100%;
+	display: block;
+	margin-top: 15px;
+}
+#room_page .popup-box .popup-body p{
+	font-size: 16px;
+	color:#555555;
+	margin:0 0 15px;
+}
+#room_page .popup-box .popup-body span{
+	font-weight: bold;
+}
+
+#room_page .popup-box .popup-footer{
+	padding: 15px;
+	border-top:1px solid #dddddd;
+	text-align: right;
+}
+#room_page .popup-box .popup-footer .btn{
+	padding: 8px 15px;
+	border:1px solid #555555;
+	color:#555555;
+	font-size: 16px;
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 4px;
+}
+#room_page .popup-box .popup-footer .btn:focus{
+	outline: none;
+}
+
+
 
 #room_page .room:hover{
     transform: scale(1.05);
