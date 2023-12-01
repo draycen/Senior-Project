@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Away</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a3b47b64d7.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class ="navbar">
+                <div>
+                    <a href="index.html"> 
+                        <img class="logo_icon" src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="navlinks" id="navi-list" >
+                        <li class="link_items"><a href="index.html">Home</a></li>
+                        <li class="link_items"><a href="about.html">About</a></li>
+                        <li class="link_items"><a href="rooms.html">Rooms</a></li>
+                        <li class="link_items"><a href="contact.html">Contact</a><li>
+                        
+                </ul>
+                <div class="menu" id="toggle_button">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                </div>
+            </nav>
+
+        </header>
+    
+    <script>
+        const toggleButton = document.getElementById('toggle_button');
+        const naviList = document.getElementById("navi-list")
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+        })
+    </script>
+
+
+    <h1>Match Found!</h1>
+
+    
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="img/logo.png" class="logo_iconf" alt="">
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/homeaway38" target="_blank" class="fa-brands fa-facebook fa-beat-fade"></a>
+                    <a href="https://www.instagram.com/homeaway38/" target="_blank" class="fa-brands fa-instagram fa-beat-fade"></a>
+                    <a href="https://www.airbnb.com/rooms/46535059?guests=1&adults=1&s=67&unique_share_id=614aec3f-2808-42f9-8e99-4a7b4472d327" target="_blank" class="fa-brands fa-airbnb fa-beat-fade"></a>   
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="footer_content"> 
+                    <h2>Contact Us</h2>
+                    <p>Please do not hesitate to ask us any question!</p>
+                    <i class="fa fa-location-dot"></i>
+                    <label>38 Do Quang Dau Street, Pham Ngu Lao Ward, Ho Chi Minh City, Vietnam. </label> <br>
+                    <i class="fa fa-phone"></i>
+                    <label>[+84] 975 380 238</label> <br>
+                    <i class="fa fa-envelope"></i>
+                    <label>homeaway38@gmail.com</label><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright © 2023 Home Away Homestay, All Rights Reserved.</p>
+    </div>
+</html>

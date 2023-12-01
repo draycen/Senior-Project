@@ -54,17 +54,17 @@
             <h1> <span>Book </span> Your Rooms </h1>
 
             <div class="form">
-                <form class="grid">
-                    <input type="date" placeholder="Arival Date">
-                    <input type="date" placeholder="Departure Date">
-                    <input type="number" placeholder="Adults">
-                    <input type="number" placeholder="Childern">
-                    <input type="submit" value="CHECK AVAILABILITY">
+                <form class="grid" id="myDateForm" method="post" action="/index">
+                    <input type="date" name="fromdate" placeholder="Arival Date">
+                    <input type="date" name="todate" placeholder="Departure Date">
+                    <input type="number" name="adults"  placeholder="Adults">
+                    <input type="number" name="children" placeholder="Childern">
+                    <button type="submit" value="check">CHECK AVAILABILITY</button>
                 </form>
             </div>
         </div>
     </section>
-
+    
     <section class="about">
         <div class="about_container">
             <div class="about_content">

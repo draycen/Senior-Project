@@ -1,9 +1,4 @@
 
-
-// connect mongo db
-const dbURI = 'mongodb+srv://draycen188:<nevergiveup>@project.j8yhjct.mongodb.net/';
-
-
 // const contactForm = document.querySelector(".contactcontainer")
 
 // if (contactForm){
@@ -18,7 +13,6 @@ const serviceItems = document.querySelector(".services");
 const popup = document.querySelector(".popup-box")
 const popupCloseBtn = popup.querySelector(".popup-close-btn");
 const popupCloseIcon = popup.querySelector(".popup-close-icon");
-console.log("Yess")
 serviceItems.addEventListener("click",function(event){
     console.log(event.target.tagName)
 if(event.target.tagName.toLowerCase() == "button"){
