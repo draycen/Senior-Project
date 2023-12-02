@@ -8,7 +8,7 @@
 //     })
 // }
 
-
+//room pop up
 const serviceItems = document.querySelector(".services");
 const popup = document.querySelector(".popup-box")
 const popupCloseBtn = popup.querySelector(".popup-close-btn");
@@ -38,4 +38,6 @@ if(event.target == popup){
 function popupBox(){
 popup.classList.toggle("open");
 }
+//
 
+//contact pop up
