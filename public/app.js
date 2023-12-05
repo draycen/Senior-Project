@@ -39,5 +39,3 @@ function popupBox(){
 popup.classList.toggle("open");
 }
 //
-
-//contact pop up

